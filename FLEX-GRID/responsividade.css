@@ -1,0 +1,57 @@
+/*@media é um seletor dp CSS que permite definir 
+estilos para cada tipo de media. É uma estrutura de codigo 
+que faz parte do modulo de Media queries,que é uma tecnologia css 
+que permite estilizar uma pagina web de acordo com determizdas 
+condiçoes:
+
+-Dimensões da tela 
+- Relação de aspecto da tela 
+-Orientção do dispositivo */
+
+@media (max-width:768px) {
+    .item{
+        flex: 0;
+        padding-top:2.4rem;
+        padding-bottom: 2.4rem;
+        padding-bottom: 2.4rem;
+}
+.sidebar {
+    justify-content: flex-start;
+}
+.content{
+    padding-left:2rem;
+    padding-reght: 1rem;
+ }
+}
+@media (max-)width:480px{
+    body{
+        grid-template-column:1fr;
+        grid-template-rows:minmax(min-content,15vh) minmax(min-content,10vh)1fr;
+        grid-template-areas:'header'
+                            'sidebar'
+                            'content';
+    }
+    .sidebar{
+        flex-flow:row wrap;
+        padding: 10px;
+    }
+.item{
+    flex:1,
+    padding:2%;
+    margin:1%
+}
+.header {
+    padding-left:12%;
+  }
+}
+
+@media (max-width:300px) {
+    .sidebar {
+        front-side: 10.5px;
+        flex-flow:row nowrap;
+        padding: 7%
+    }
+    .item{
+        flex:1 1 content;
+    }
+}
